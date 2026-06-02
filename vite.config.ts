@@ -45,6 +45,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, outDir),
     emptyOutDir: true,
+    chunkSizeWarningLimit: 1000,
   },
   server: {
     port,
