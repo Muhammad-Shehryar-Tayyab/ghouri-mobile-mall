@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --config vite.config.ts --host 0.0.0.0",
     "build": "cross-env BASE_PATH=/ghouri-mobile-mall/ vite build --config vite.config.ts",
+    "build:vercel": "cross-env BASE_PATH=/ vite build --config vite.config.ts",
     "deploy": "npm run build",
     "serve": "vite preview --config vite.config.ts --host 0.0.0.0",
     "typecheck": "tsc -p tsconfig.json --noEmit"
